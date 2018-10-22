@@ -5,6 +5,8 @@ import java.util.*;
 public class Facebookit {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		Amico a = new Amico("", "", "");
+	    Foto f = new Foto ("");
 		int m=0;
 		do {
 			System.out.println("Premi 1 per aggiungere un amico");
@@ -16,11 +18,16 @@ public class Facebookit {
 			sc.nextLine();
 			switch (m) {
 			case 1:
-				Amico a = new Amico(sc.nextLine(), sc.nextLine(), sc.nextLine());
-				a.setNome();
-				a.setCognome();
-				a.setEta(); 
-				a.Aggiungiamico();
+				a.aggiungiamico();
+				break;
+			case 2:
+				f.aggiungifoto();
+			case 3:
+				a.stampamici();
+				break;
+			case 4:
+				f.stampafoto();
+				break;
 		}
 				
 		
