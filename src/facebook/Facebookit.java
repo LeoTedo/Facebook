@@ -22,6 +22,7 @@ public class Facebookit {
 				break;
 			case 2:
 				f.aggiungifoto();
+				break;
 			case 3:
 				a.stampamici();
 				break;

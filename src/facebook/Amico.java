@@ -6,7 +6,7 @@ public class Amico {
 	private String nome;
 	private String cognome;
 	private String eta;
-	private Amico[] listamici = new Amico[20];;
+	public static Amico[] listamici = new Amico[20];
 	private int i = 0;
 
 	public Amico(String nome, String cognome, String eta) {
@@ -17,7 +17,7 @@ public class Amico {
 
 	@Override
 	public String toString() {
-		return "Amico nome = " + nome + ", cognome = " + cognome + ", eta = " + eta + "";
+		return "" + nome + " " + cognome + " " + eta + " ";
 	}
 
 	public String setNome() {
